@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<head>
+  <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+  <title>Backbone View Helper Tests</title>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+  <script src="http://code.jquery.com/qunit/qunit-1.10.0.js" type="text/javascript" charset="utf-8"></script>
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.4.2/underscore-min.js" type="text/javascript" charset="utf-8"></script>
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/backbone.js/0.9.2/backbone-min.js" type="text/javascript" charset="utf-8"></script>
+  <script src="../lib/backbone_view_helpers.js" type="text/javascript" charset="utf-8"></script>
+  <script src="tests.js" type="text/javascript" charset="utf-8"></script>
+  <link rel="stylesheet" href="http://code.jquery.com/qunit/qunit-1.10.0.css" type="text/css" media="screen" title="no title" charset="utf-8">
+</head>
+<body>
+  <h1 id="qunit-header">Backbone ViewHelper Tests</h1>
+  <h2 id="qunit-banner"></h2>
+  <div id="qunit-testrunner-toolbar"></div>
+  <h2 id="qunit-userAgent"></h2>
+  <ol id="qunit-tests"></ol>
+  
+  <div id="qunit-fixture">
+    
+    <div id="element">
+      <select class="invalidSelection" data-validation_label="The Invalid Selection">
+        <option value="0.01">0.01</option>
+        <option value="0.1">0.1</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+        <option value="9">9</option>
+        <option value="10">10</option>
+      </select>
+
+      <input id="invalidInput" data-validation_label="foobar" name="invalidInput" />
+      <input id="invalidInputNoData" name="invalidInputNoData" />
+    </div>
+  </div>
+</body>
+</html>
